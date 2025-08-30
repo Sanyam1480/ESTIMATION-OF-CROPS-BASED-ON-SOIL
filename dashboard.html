@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crop Estimation Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <nav style="margin-bottom: 2em; text-align: center">
+      <a href="dashboard.html">Dashboard</a> |
+      <a href="history.html">History</a> | <a href="#">Settings</a> |
+      <a href="signout.html">Logout</a>
+    </nav>
+    <!-- Mobile Header -->
+    <div class="header">
+      <h2>Crop Estimator</h2>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h2>Crop Estimator</h2>
+      <a href="#">Dashboard</a>
+      <a href="#">Soil Analysis</a>
+      <a href="history.html">History</a>
+      <a href="#">Settings</a>
+      <a href="signout.html">Logout</a>
+    </div>
+
+    <div class="main">
+      <h1>Crop Estimation Dashboard</h1>
+
+      <div class="form-section">
+        <h2>Enter Soil Parameters</h2>
+        <form id="soilForm">
+          <div class="form-group">
+            <label for="N">Nitrogen (N)</label>
+            <input type="number" id="N" required />
+          </div>
+          <div class="form-group">
+            <label for="P">Phosphorus (P)</label>
+            <input type="number" id="P" required />
+          </div>
+          <div class="form-group">
+            <label for="K">Potassium (K)</label>
+            <input type="number" id="K" required />
+          </div>
+          <div class="form-group">
+            <label for="temperature">Temperature (°C)</label>
+            <input type="number" step="0.1" id="temperature" required />
+          </div>
+          <div class="form-group">
+            <label for="humidity">Humidity (%)</label>
+            <input type="number" step="0.1" id="humidity" required />
+          </div>
+          <div class="form-group">
+            <label for="ph">Soil pH</label>
+            <input type="number" step="0.1" id="ph" required />
+          </div>
+          <div class="form-group">
+            <label for="rainfall">Rainfall (mm)</label>
+            <input type="number" step="0.1" id="rainfall" required />
+          </div>
+          <button class="submit-btn" type="submit">Estimate Crops</button>
+        </form>
+      </div>
+
+      <div class="results" id="results">
+        <h3>Estimated Suitable Crops</h3>
+        <!-- Results will be injected here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Out - Crop Estimator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="auth-body">
+    <div class="auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <i
+            class="fas fa-sign-out-alt"
+            style="font-size: 48px; color: var(--primary); margin-bottom: 20px"
+          ></i>
+          <h2>Signed Out</h2>
+          <p>You have been successfully signed out</p>
+        </div>
+
+        <div class="auth-links" style="margin-top: 30px">
+          <a
+            href="signin.html"
+            class="submit-btn"
+            style="text-decoration: none; display: inline-block"
+          >
+            Sign In Again
+          </a>
+        </div>
+
+        <div class="auth-links" style="margin-top: 20px">
+          <a href="indexl.html">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Auto redirect after 3 seconds
+      setTimeout(() => {
+        window.location.href = "indexl.html";
+      }, 2000);
+    </script>
+  </body>
+</html>

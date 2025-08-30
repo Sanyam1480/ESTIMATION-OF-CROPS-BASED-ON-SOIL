@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction History</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Mobile Header -->
+    <div class="header">
+      <h2>Crop Estimator</h2>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h2>Crop Estimator</h2>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="history.html">History</a>
+      <a href="#">Settings</a>
+      <a href="signout.html">Logout</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h1>Prediction History</h1>
+      <button class="clear-btn" onclick="clearHistory()">
+        🗑️ Clear Prediction History
+      </button>
+
+      <div id="history" class="results">
+        <!-- Prediction history will be shown here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
